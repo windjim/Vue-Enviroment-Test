@@ -1,0 +1,31 @@
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    {{ data1 }}
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      data1: {}
+    }
+  },
+  mounted() {
+    this.$http.get('https://randomuser.me/api/').then((response) => {
+      console.log(response.data)
+      this.data1 = response.data.results[0]
+    })
+  }
+}
+</script>
+<style>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
