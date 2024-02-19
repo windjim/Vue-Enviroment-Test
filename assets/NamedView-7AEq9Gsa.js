@@ -1,0 +1,1 @@
+import{_ as t,r as c,o as r,c as a,d as o,b as s}from"./index-nAt5LT8_.js";const n={},_={class:"row"},d={class:"cpl-6"},i={class:"cpl-6"};function l(m,p){const e=c("router-view");return r(),a("div",_,[o("div",d,[s(e,{name:"left"})]),o("div",i,[s(e,{name:"right"})])])}const v=t(n,[["render",l]]);export{v as default};
